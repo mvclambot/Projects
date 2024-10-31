@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Scrolling with Colors</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body,
+        html {
+            height: 100%;
+            overflow-x: hidden;
+            font-family: Arial, sans-serif;
+        }
+
+        .parallax-container {
+            position: relative;
+            height: 200vh;
+            overflow: hidden;
+        }
+
+        .parallax-layer {
+            position: absolute;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .layer-1 {
+            background-color: #FF6347; /* Tomato */
+            z-index: 1;
+        }
+
+        .layer-2 {
+            background-color: #4682B4; /* Steel Blue */
+            z-index: 2;
+        }
+
+        .layer-3 {
+            background-color: #32CD32; /* Lime Green */
+            z-index: 3;
+        }
+
+        .layer-4 {
+background-image: url("img/Bridal Car Services/bridal-service.webp");            z-index: 4;
+        }
+
+        .content {
+            position: relative;
+            z-index: 5;
+            color: #fff;
+            text-align: center;
+            padding-top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parallax-container">
+        <div class="parallax-layer layer-1"></div>
+        <div class="parallax-layer layer-2"></div>
+        <div class="parallax-layer layer-3"></div>
+        <div class="parallax-layer layer-4"></div>
+        <div class="content">
+            <h1>Welcome to the Parallax Example</h1>
+            <p>Scroll down to see the effect!</p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("scroll", () => {
+            const scrollPosition = window.scrollY;
+
+            document.querySelector(".layer-1").style.transform = `translateY(${scrollPosition * 0.3}px)`;
+            document.querySelector(".layer-2").style.transform = `translateY(${scrollPosition * 0.6}px)`;
+            document.querySelector(".layer-3").style.transform = `translateY(${scrollPosition * 0.9}px)`;
+            document.querySelector(".layer-4").style.transform = `translateY(${scrollPosition * 1.2}px)`;
+        });
+    </script>
+</body>
+
+</html>

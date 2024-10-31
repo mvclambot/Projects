@@ -1,0 +1,216 @@
+
+body {
+    background-color: #A67B5B;
+}
+
+header {
+    height: 70px;
+    background-color: #323232;
+    position: fixed;
+    z-index: 1;
+}
+
+img {
+    width: 90px;
+}
+
+ul li a, h1 {
+    font-family: "Bebas Neue", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.font-size {
+    font-size: 100px;
+    color: black;
+    text-align: center;
+}
+
+.about {
+    height: 1200px;
+    background-image: url("img/Sky.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    z-index: -2;
+}   
+
+.about img {
+    position: relative;
+    width: 100%;
+}
+
+.title {
+    position: fixed;
+    top: 200px;
+    z-index: -1;
+}
+
+.title-image {
+    background-image: url("img/dubaiBeach.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 150px
+}
+p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.section-what {
+    height: 800px;
+    width: 100%;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section-what p {
+
+        font-family: "Crimson Pro", serif;
+        width: 60%;
+}
+.section-what h1 {
+    color: #323232;
+    width: 50%;
+    text-align: center;
+    font-size: 100px;
+}
+
+
+.section-bridal {
+    height: 1000px;
+    width: 100%;
+
+    background-image: url("img/Sky.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    flex-direction: column;
+}
+
+.title-bridal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-bridal h1 {
+    font-family: "Bonheur Royale", cursive;
+}
+
+.title-bridal p {
+    font-family: "Alumni Sans", sans-serif;
+    font-size: 28px;
+}
+.button-bridal {
+    border: 5px solid white;
+    background-color: transparent;
+    padding: 10px;
+    color: white;
+    
+}
+
+.section-bridal h1, .section-bridal p {
+    color: white;
+} 
+
+
+
+
+.title-bridal img {
+    width: 100%;
+}
+
+.section-services {
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    background-color: #333333;
+}
+
+.section-services h1 {
+font-family: "Abril Fatface", serif;
+color: #C7AA8B;
+font-size: 80px;
+text-align: center;
+}
+
+.section-services-body {
+    background-color: #A67B5B;
+    height: auto;
+    padding: 50px;
+}
+
+.color {
+    background-color: #A67B5B;
+
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: #3232328f;
+  }
+  
+::-webkit-scrollbar-thumb {
+    background-color: #323232;
+    border: 2px solid #323232;
+    border-radius: 10px;
+}
+
+
+
+
+.section-services h1 {
+    font-size: 80px; /* Default size */
+  }
+  
+  @media (max-width: 600px) {
+    .section-services h1 {
+      font-size: 50px; /* Smaller size for mobile */
+    }
+
+    .section-what {
+        height: auto;
+        padding: 50px 0 50px 0;
+    }
+
+    .section-what p {
+        text-align: center;
+    }
+
+    .section-bridal p {
+        text-align: center;
+        width: 70%;
+    }
+  }
+  
+
+  footer {
+    background-color: #333333;
+    height: auto;
+    padding: 50px;
+  }
+
+  .contact {
+    font-size: 50px;
+    font-family: Oswald;
+  }
+
+  .contact ul li a{
+    font-family: Oswald;
+  }
